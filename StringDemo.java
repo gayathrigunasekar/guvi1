@@ -1,8 +1,12 @@
 public class StringDemo
 {
-    static int i,c=0,res;
-    static int wordcount(String s)
+ public static void main (String args[])
     {
+        String s="";
+        int c=0;
+        Scanner(System.in);
+        System.out.println("please enter number of string");
+        s=in.nextLine();
         char ch[]= new char[s.length()];      
         for(i=0;i<s.length();i++)
         {
@@ -10,13 +14,6 @@ public class StringDemo
             if( ((i>0)&&(ch[i]!=' ')&&(ch[i-1]==' ')) || ((ch[0]!=' ')&&(i==0)) )
             c++;
         }
-        return c;
-    }
-    
-    public static void main (String args[])
-    {
-        res=StringDemo.wordcount("   manchester united is also known as red devil ");
-        //string is always passed in double quotes
         
         System.out.println("The number of words in the String are :  "+res);
     }
