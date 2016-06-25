@@ -6,7 +6,7 @@ public class LeapYearCalculator
         /*Give the year here which needs to be checked for leap year
          * (Assuming that year given here  >= 1582 and corresponds to a year in Gregorian calendar)
          */
-        int year = 2000;
+        int year;
  
         //Flag to store the test result
         boolean isLeapYear = false;
